@@ -13,13 +13,17 @@ A video for input in which pedestrians can be clearly differentiated by the huma
 
 ## Instructions to Run
 -pip install numpy
+
 -pip install opencv-python
 
 Enter the paths to the files of YOLO model in line 5
+
 The path to the file containing class names in line 8
+
 The path to the input video in line 11
 
 ## Result
 Successfully return a video with rectangular boxes around the identified pedestrians and a counter on the top left of the frame
+
 Link to the output video: https://drive.google.com/file/d/1JFpKHqioxKgshmnCDwzG9XFx661s7LXf/view?usp=drive_link
 
