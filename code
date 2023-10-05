@@ -2,13 +2,13 @@ import numpy as np
 import cv2 as cv
 
 # Load YOLOv3 model
-net = cv.dnn.readNet("C:\\Users\\harsh\\OneDrive\\Desktop\\PYTHON\\yolo-coco\\yolov3.weights","C:\\Users\\harsh\\OneDrive\\Desktop\\PYTHON\\yolo-coco\\yolov3.cfg")
+net = cv.dnn.readNet("YOLO WEIGHTS","YOLO")
 
 # Load class names
-with open("C:\\Users\\harsh\\OneDrive\\Desktop\\PYTHON\\yolo-coco\\coco.names", 'r') as f:
+with open("YOLO CLASS NAMES", 'r') as f:
     classes = f.read().strip().split('\n')
  
-vid=cv.VideoCapture("C:\\Users\\harsh\\Downloads\\12.mp4.mp4")
+vid=cv.VideoCapture("INPUT VIDEO")
 bg_object=cv.createBackgroundSubtractorMOG2(history=10)
 
 
